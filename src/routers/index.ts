@@ -25,6 +25,12 @@ export const router = createBrowserRouter([
         lazy: {
           Component: async () => (await import("../examples/03Prop/index")).default
         }
+      },
+      {
+        path: "04",
+        lazy: {
+          Component: async () => (await import("../examples/04Tab/index")).default
+        }
       }
     ]
   }

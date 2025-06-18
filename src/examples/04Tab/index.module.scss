@@ -1,0 +1,19 @@
+.tabs {
+  display: flex;
+  height: 40px;
+  > div {
+    cursor: pointer;
+    padding: 0 20px;
+    height: 100%;
+    display: inline-flex;
+    border-bottom: solid 3px transparent;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    &.active {
+      color: dodgerblue;
+      border-bottom-color: dodgerblue;
+      transition: all 0.5s;
+    }
+  }
+}

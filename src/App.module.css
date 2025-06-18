@@ -30,6 +30,7 @@
 .left-nav > div.active {
   color: dodgerblue;
   font-weight: bold;
+  transition: all 0.5s;
 }
 .right-content {
   height: 100%;

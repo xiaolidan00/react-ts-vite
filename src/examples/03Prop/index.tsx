@@ -1,11 +1,11 @@
-import type {ReactNode, MouseEvent} from "react";
+import type {ReactNode, MouseEvent, FC} from "react";
 import styles from "./index.module.scss";
 type Props = {
   type: "primary" | "info" | "danger";
   children?: ReactNode;
   onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
 };
-const MyButton = (prop: Props) => {
+const MyButton: FC<Props> = (prop) => {
   return (
     <button className={styles.button + " " + styles[prop.type]} onClick={prop.onClick}>
       {prop.children}
