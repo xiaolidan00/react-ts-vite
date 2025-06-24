@@ -29,7 +29,37 @@ export const router = createBrowserRouter([
       {
         path: "04",
         lazy: {
-          Component: async () => (await import("../examples/04Tab/index")).default
+          Component: async () => (await import("../examples/04useCallback/index")).default
+        }
+      },
+      {
+        path: "05",
+        lazy: {
+          Component: async () => (await import("../examples/05useReducer/index")).default
+        }
+      },
+      {
+        path: "06",
+        lazy: {
+          Component: async () => (await import("../examples/06useEffect/index")).default
+        }
+      },
+      {
+        path: "07",
+        lazy: {
+          Component: async () => (await import("../examples/07useRef/index")).default
+        }
+      },
+      {
+        path: "08",
+        lazy: {
+          Component: async () => (await import("../examples/08useImperativeHandle/index")).default
+        }
+      },
+      {
+        path: "09",
+        lazy: {
+          Component: async () => (await import("../examples/09useLoading/index")).default
         }
       }
     ]
