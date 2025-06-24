@@ -61,6 +61,18 @@ export const router = createBrowserRouter([
         lazy: {
           Component: async () => (await import("../examples/09useLoading/index")).default
         }
+      },
+      {
+        path: "10",
+        lazy: {
+          Component: async () => (await import("../examples/10Event/index")).default
+        }
+      },
+      {
+        path: "11",
+        lazy: {
+          Component: async () => (await import("../examples/11Context/index")).default
+        }
       }
     ]
   }

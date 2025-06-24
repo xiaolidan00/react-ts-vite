@@ -1,17 +1,19 @@
-import type {ReactNode, MouseEvent, FC} from "react";
+import type {ReactNode, MouseEvent} from "react";
 import styles from "./index.module.scss";
 type Props = {
-  type: "primary" | "info" | "danger";
+  type?: "primary" | "info" | "danger" | "default";
   children?: ReactNode;
   onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
 };
-const MyButton: FC<Props> = (prop) => {
+
+const MyButton = function ({type = "default", children, onClick}: Props) {
   return (
-    <button className={styles.button + " " + styles[prop.type]} onClick={prop.onClick}>
-      {prop.children}
+    <button className={styles.button + " " + styles[type]} onClick={onClick}>
+      {children}
     </button>
   );
 };
+
 const PropComp = () => {
   const onBtnClick = (ev: MouseEvent<HTMLButtonElement>) => {
     const target = ev.target as HTMLButtonElement;
@@ -20,6 +22,7 @@ const PropComp = () => {
   return (
     <>
       <h1>Prop</h1>
+      <MyButton>Default</MyButton>
       <MyButton type="primary" onClick={onBtnClick}>
         Primary
       </MyButton>

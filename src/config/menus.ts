@@ -7,5 +7,7 @@ export default [
   {label: "06useEffect", path: "/06"},
   {label: "07useRef", path: "/07"},
   {label: "08useImperativeHandle", path: "/08"},
-  {label: "09useLoading", path: "/09"}
+  {label: "09useLoading", path: "/09"},
+  {label: "10Event", path: "/10"},
+  {label: "11Context", path: "/11"}
 ];

@@ -4,6 +4,9 @@
   color: white;
   border: none;
   cursor: pointer;
+  &.default {
+    background-color: gainsboro;
+  }
   &.primary {
     background-color: dodgerblue;
   }
