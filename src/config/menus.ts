@@ -9,5 +9,12 @@ export default [
   {label: "08useImperativeHandle", path: "/08"},
   {label: "09useLoading", path: "/09"},
   {label: "10Event", path: "/10"},
-  {label: "11Context", path: "/11"}
+  {label: "11Context", path: "/11"},
+  {label: "12createRef", path: "/12"},
+  {label: "13createPortal", path: "/13"},
+  {label: "14ErrorBoundary", path: "/14"},
+  {label: "15HOC", path: "/15"},
+  {label: "16use", path: "/16"},
+  {label: "17useMemo", path: "/17"},
+  {label: "18memo", path: "/18"}
 ];

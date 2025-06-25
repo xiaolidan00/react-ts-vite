@@ -40,3 +40,13 @@
   display: inline-block;
   padding: 20px;
 }
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}

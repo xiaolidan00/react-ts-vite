@@ -73,6 +73,48 @@ export const router = createBrowserRouter([
         lazy: {
           Component: async () => (await import("../examples/11Context/index")).default
         }
+      },
+      {
+        path: "12",
+        lazy: {
+          Component: async () => (await import("../examples/12createRef/index")).default
+        }
+      },
+      {
+        path: "13",
+        lazy: {
+          Component: async () => (await import("../examples/13createPortal/index")).default
+        }
+      },
+      {
+        path: "14",
+        lazy: {
+          Component: async () => (await import("../examples/14ErrorBoundary/index")).default
+        }
+      },
+      {
+        path: "15",
+        lazy: {
+          Component: async () => (await import("../examples/15HOC/index")).default
+        }
+      },
+      {
+        path: "16",
+        lazy: {
+          Component: async () => (await import("../examples/16Use/index")).default
+        }
+      },
+      {
+        path: "17",
+        lazy: {
+          Component: async () => (await import("../examples/17useMemo/index")).default
+        }
+      },
+      {
+        path: "18",
+        lazy: {
+          Component: async () => (await import("../examples/18memo/index")).default
+        }
       }
     ]
   }
