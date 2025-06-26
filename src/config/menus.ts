@@ -16,5 +16,11 @@ export default [
   {label: "15HOC", path: "/15"},
   {label: "16use", path: "/16"},
   {label: "17useMemo", path: "/17"},
-  {label: "18memo", path: "/18"}
+  {label: "18memo", path: "/18"},
+  {label: "19useActionState", path: "/19"},
+  {label: "20useOptimistic", path: "/20"},
+  {label: "21useTransition", path: "/21"},
+  {label: "22useSyncExternalStore", path: "/22"},
+  {label: "23useDeferredValue", path: "/23"},
+  {label: "24lazy", path: "/24"}
 ];

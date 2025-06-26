@@ -115,6 +115,42 @@ export const router = createBrowserRouter([
         lazy: {
           Component: async () => (await import("../examples/18memo/index")).default
         }
+      },
+      {
+        path: "19",
+        lazy: {
+          Component: async () => (await import("../examples/19useActionState/index")).default
+        }
+      },
+      {
+        path: "20",
+        lazy: {
+          Component: async () => (await import("../examples/20useOptimistic/index")).default
+        }
+      },
+      {
+        path: "21",
+        lazy: {
+          Component: async () => (await import("../examples/21useTransition/index")).default
+        }
+      },
+      {
+        path: "22",
+        lazy: {
+          Component: async () => (await import("../examples/22useSyncExternalStore/index")).default
+        }
+      },
+      {
+        path: "23",
+        lazy: {
+          Component: async () => (await import("../examples/23useDeferredValue/index")).default
+        }
+      },
+      {
+        path: "24",
+        lazy: {
+          Component: async () => (await import("../examples/24lazy/index")).default
+        }
       }
     ]
   }
